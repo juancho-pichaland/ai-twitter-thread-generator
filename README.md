@@ -1,14 +1,14 @@
-# 🤖 Twitter AI Bot
+# Twitter AI Bot
 
-Este proyecto automatiza la **creación y publicación de hilos de Twitter** utilizando **OpenAI** y la **API de Twitter**.
+Este proyecto es creado para la automatización de un bot que **crea publicaciones o de hilos de Twitter** utilizando **OpenAI** y la **API de Twitter**.
 
-## 🚀 Características
+## Características
 - Lee temas desde `data/topics.csv`
 - Genera hilos con GPT (ChatGPT API)
 - Publica los hilos automáticamente en Twitter
 - Configurable mediante variables de entorno `.env`
 
-## 🛠 Instalación
+## Instalación
 
 ```bash
 git clone https://github.com/tuusuario/twitter_ai_bot.git
@@ -16,15 +16,15 @@ cd twitter_ai_bot
 pip install -r requirements.txt
 cp .env.example .env
 ```
-Edita `.env` con tus claves de OpenAI y Twitter.
+Edita `.env` con tus claves de OpenAI y Twitter (Rotar de claves cada cierto tiempo).
 
-## ▶️ Ejecución
+## Ejecución
 
 ```bash
 python -m src.main
 ```
 
-## 🧠 Estructura
+## Estructura
 
 ```
 twitter_ai_bot/
@@ -40,10 +40,11 @@ twitter_ai_bot/
 └── README.md
 ```
 
-## ⚡ Credenciales requeridas
+## Credenciales requeridas
 
 - OpenAI API Key → [https://platform.openai.com/account/api-keys](https://platform.openai.com/account/api-keys)
 - Twitter Developer Portal → [https://developer.twitter.com/](https://developer.twitter.com/)
 
-## 💡 Nota
-Nunca subas tu archivo `.env` al repositorio público.
+## Nota
+Nunca subas tu archivo `.env` a un repositorio público.
+Usa el .env.example y copia tus claves en el archivo .env solo en tu entorno virtual personal.
